@@ -1,12 +1,18 @@
+:root{
+    --first-font: 'Arial Narrow', sans-serif;
+    --second-font:  'Tangerine', serif;
+    --third-font: 'Gemunu Libre', sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: 'Arial Narrow', sans-serif;
+    font-family: var(--first-font);
     background-color: whitesmoke;
     scroll-behavior: smooth;
+    text-shadow: 4px 4px 4px #aaa;
 }
 li{
     list-style-type: none;
@@ -64,7 +70,7 @@ a{
     .brand{
         h3{
             font-size: 20px;
-            font-family: 'Bradley Hand ITC';
+            font-family: var(--third-font);
             font-weight: 600;
         }
     }
@@ -85,7 +91,7 @@ a{
                 border-radius: 6px;
                 color: rgb(118, 114, 114);
                 background-color: transparent;
-                font-family: 'Bradley Hand ITC';
+                font-family: var(--third-font);
                 font-size: 20px;
                 border: 1px solid transparent;
                 &:hover{
@@ -137,7 +143,7 @@ a{
             color: green;
             font-size: 50px;
             margin-left: 10px;
-            font-family: 'Bradley Hand ITC';
+            font-family: var(--third-font);
             position: relative;
             transform: translateY(-50vh);
             animation: animate 5s infinite;
@@ -155,7 +161,7 @@ a{
             margin-bottom: 25px;
             opacity: 0;
             color: #0d6dfd9b;
-            font-family: 'Bradley Hand ITC';
+            font-family: var(--third-font);
         }
         .message-btn{
             padding: 10px 20px;
@@ -164,7 +170,7 @@ a{
             border-radius: 10px;
             color:white;
             width: 200px;
-            font-family: 'Bradley Hand ITC';
+            font-family: var(--third-font);
             cursor: pointer;
             z-index: 20;
             background-color: rgb(91, 142, 91);
@@ -207,7 +213,7 @@ a{
             display: flex;
             justify-content: space-between;
             h3{
-                font-family: 'Freestyle Script', sans-serif;
+                font-family: var(--second-font);
                 font-size: 40px;
                 text-decoration: underline;
                 font-weight: 400;
@@ -215,7 +221,7 @@ a{
         }
         form{
             label{
-                font-family: 'Freestyle Script', sans-serif;
+                font-family: var(--second-font);
                 margin: 0;
                 font-size: 30px;
             }
@@ -228,7 +234,7 @@ a{
                     box-shadow: none;
                 }
                 &::placeholder{
-                    font-family: 'Bradley Hand ITC', sans-serif;
+                    font-family: var(--third-font);
                     font-size: 20px;
 
                 }
@@ -255,7 +261,7 @@ a{
         padding-top: 60px;
         .header{
             font-size: 30px;   
-            font-family: 'Freestyle Script';
+            font-family: var(--second-font);
             text-decoration: underline; 
             margin-bottom: 20px;
         }
@@ -268,7 +274,7 @@ a{
                 ol{
                     .project-header{
                         font-size: 20px;
-                        font-family: 'Bradley Hand ITC';
+                        font-family: var(--third-font);
                         font-weight: 800;
                     }
                     li{
@@ -312,7 +318,7 @@ a{
     padding-top: 80px;
     .header h3{
         font-size: 30px;
-        font-family: 'Freestyle Script';
+        font-family: var(--second-font);
         text-decoration: underline;
     }
     ol{
@@ -330,7 +336,7 @@ a{
             li{
                 margin-bottom: 10px;
                 color: #0d6efd;
-                font-family: 'Bradley Hand ITC';
+                font-family: var(--third-font);
                 font-weight: 400;
             }
         }
@@ -352,7 +358,7 @@ a{
             h3{
                 font-size:30px;
                 text-decoration: underline;
-                font-family: 'Freestyle Script';
+                font-family: var(--second-font)
             }
         }
         .about{
@@ -363,12 +369,12 @@ a{
                 
                 li{
                     font-size: 30px;
-                    font-family: 'Bradley Hand ITC';
+                    font-family: var(--third-font)
                     span{
                         font-size: 40px;
                         font-weight: 200;
                         letter-spacing: 1px;
-                        font-family: 'Freestyle Script';
+                        font-family: var(--second-font)
                     }
                 }
             }
