@@ -376,8 +376,10 @@ a{
         .profile-image{
             margin-right: 10px;
             border-radius: 20px;
+            height: 400px;
             img{
                 border-radius: 20px;
+                height: 100%;
             }
         }
     }

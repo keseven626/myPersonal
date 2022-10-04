@@ -390,9 +390,11 @@ a {
 #about-me .about-container .profile-image {
   margin-right: 10px;
   border-radius: 20px;
+  height: 400px;
 }
 #about-me .about-container .profile-image img {
   border-radius: 20px;
+  height: 100%;
 }
 
 @-webkit-keyframes animate {
