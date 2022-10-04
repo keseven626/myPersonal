@@ -1,0 +1,14 @@
+{
+                  "liveServer.settings.port": 5501,
+                  "editor.wordWrapColumn": 160,
+                  "diffEditor.wordWrap": "on",
+            "editor.wordWrap": "wordWrapColumn",
+            "cSpell.ignoreWords": [
+                  "Damilola",
+                  "YABA",
+                  "gsap",
+                  "myprofile",
+                  "nemo",
+                  "nemophisa"
+            ]
+}
