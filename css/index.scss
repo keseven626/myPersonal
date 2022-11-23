@@ -129,6 +129,20 @@ a{
         }
     }
 }
+.background-image{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -60;
+    top: 0;
+    left: 0;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+}
 .hero-container{
     height: 100vh;
     display: flex;
