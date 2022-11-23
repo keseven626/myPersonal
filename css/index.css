@@ -135,19 +135,6 @@ a {
   transition: all 1s ease;
 }
 
-.background-img {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  z-index: -60;
-  top: 0;
-  left: 0;
-  opacity: 0.6 img;
-  opacity-height: 100%;
-  opacity-width: 100%;
-  opacity-object-fit: cover;
-}
-
 .hero-container {
   height: 100vh;
   display: flex;
