@@ -142,12 +142,10 @@ a {
   z-index: -60;
   top: 0;
   left: 0;
-}
-.background-img img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  opacity: 0.6 img;
+  opacity-height: 100%;
+  opacity-width: 100%;
+  opacity-object-fit: cover;
 }
 
 .hero-container {
