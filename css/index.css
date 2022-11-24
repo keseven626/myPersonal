@@ -154,10 +154,10 @@ a {
   height: 100vh;
   width: 100%;
   position: absolute;
-  z-index: -58;
+  z-index: -50;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.363);
+  background-color: rgba(0, 0, 0, 0.521);
 }
 
 .hero-container {
