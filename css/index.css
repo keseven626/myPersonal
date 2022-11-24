@@ -142,11 +142,14 @@ a {
   z-index: -60;
   top: 0;
   left: 0;
-  opacity: 0.8 img;
-  opacity-height: 100%;
-  opacity-width: 100%;
-  opacity-object-fit: cover;
-  opacity-z-index: -60;
+  opacity: 0.8;
+}
+.background-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -60;
 }
 
 .hero-container {
@@ -165,8 +168,9 @@ a {
   position: fixed;
 }
 .hero-container .hero-content p {
-  color: green;
-  font-size: 50px;
+  color: rgb(26, 71, 26);
+  font-size: 55px;
+  font-weight: 600;
   margin-left: 10px;
   font-family: var(--third-font);
   position: relative;
@@ -179,7 +183,7 @@ a {
   margin-bottom: 10px;
 }
 .hero-container .hero-content h3 {
-  font-size: 18px;
+  font-size: 20px;
   transform: translateY(50vh);
   margin-bottom: 20px;
   width: 45%;
@@ -187,7 +191,7 @@ a {
   margin-top: 30px;
   margin-bottom: 25px;
   opacity: 0;
-  color: rgba(13, 109, 253, 0.6078431373);
+  color: rgba(13, 109, 253, 0.8431372549);
   font-family: var(--third-font);
 }
 .hero-container .hero-content .message-btn {
