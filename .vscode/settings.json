@@ -10,5 +10,8 @@
                   "myprofile",
                   "nemo",
                   "nemophisa"
+            ],
+            "githubPullRequests.ignoredPullRequestBranches": [
+                  "master"
             ]
 }

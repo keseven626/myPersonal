@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+:root {
+  --first-font: "Lobster Two", cursive;
+  --second-font: "Great Vibes", cursive;
+  --third-font: "Saira Condensed", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +14,10 @@
 }
 
 body {
-  font-family: "Arial Narrow", sans-serif;
+  font-family: var(--first-font);
   background-color: whitesmoke;
   scroll-behavior: smooth;
+  text-shadow: 4px 4px 4px #aaa;
 }
 
 li {
@@ -71,7 +81,7 @@ a {
 }
 .nav-bar .brand h3 {
   font-size: 20px;
-  font-family: "Bradley Hand ITC";
+  font-family: var(--third-font);
   font-weight: 600;
 }
 .nav-bar .nav-links {
@@ -94,7 +104,7 @@ a {
   border-radius: 6px;
   color: rgb(118, 114, 114);
   background-color: transparent;
-  font-family: "Bradley Hand ITC";
+  font-family: var(--third-font);
   font-size: 20px;
   border: 1px solid transparent;
 }
@@ -125,6 +135,31 @@ a {
   transition: all 1s ease;
 }
 
+.background-img {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -60;
+  top: 0;
+  left: 0;
+}
+.background-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -60;
+}
+.background-img .overlay {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -50;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.521);
+}
+
 .hero-container {
   height: 100vh;
   display: flex;
@@ -141,10 +176,11 @@ a {
   position: fixed;
 }
 .hero-container .hero-content p {
-  color: green;
-  font-size: 50px;
+  color: rgb(26, 71, 26);
+  font-size: 55px;
+  font-weight: 600;
   margin-left: 10px;
-  font-family: "Bradley Hand ITC";
+  font-family: var(--third-font);
   position: relative;
   transform: translateY(-50vh);
   -webkit-animation: animate 5s infinite;
@@ -155,7 +191,7 @@ a {
   margin-bottom: 10px;
 }
 .hero-container .hero-content h3 {
-  font-size: 18px;
+  font-size: 20px;
   transform: translateY(50vh);
   margin-bottom: 20px;
   width: 45%;
@@ -163,8 +199,8 @@ a {
   margin-top: 30px;
   margin-bottom: 25px;
   opacity: 0;
-  color: rgba(13, 109, 253, 0.6078431373);
-  font-family: "Bradley Hand ITC";
+  color: rgba(13, 109, 253, 0.8431372549);
+  font-family: var(--third-font);
 }
 .hero-container .hero-content .message-btn {
   padding: 10px 20px;
@@ -173,7 +209,7 @@ a {
   border-radius: 10px;
   color: white;
   width: 200px;
-  font-family: "Bradley Hand ITC";
+  font-family: var(--third-font);
   cursor: pointer;
   z-index: 20;
   background-color: rgb(91, 142, 91);
@@ -219,13 +255,13 @@ a {
   justify-content: space-between;
 }
 .form-container .contact-form .contact-head h3 {
-  font-family: "Freestyle Script", sans-serif;
+  font-family: var(--second-font);
   font-size: 40px;
   text-decoration: underline;
   font-weight: 400;
 }
 .form-container .contact-form form label {
-  font-family: "Freestyle Script", sans-serif;
+  font-family: var(--second-font);
   margin: 0;
   font-size: 30px;
 }
@@ -239,15 +275,15 @@ a {
   box-shadow: none;
 }
 .form-container .contact-form form .form-control::-moz-placeholder {
-  font-family: "Bradley Hand ITC", sans-serif;
+  font-family: var(--third-font);
   font-size: 20px;
 }
 .form-container .contact-form form .form-control:-ms-input-placeholder {
-  font-family: "Bradley Hand ITC", sans-serif;
+  font-family: var(--third-font);
   font-size: 20px;
 }
 .form-container .contact-form form .form-control::placeholder {
-  font-family: "Bradley Hand ITC", sans-serif;
+  font-family: var(--third-font);
   font-size: 20px;
 }
 .form-container .contact-form form .btn-submit {
@@ -273,7 +309,7 @@ a {
 }
 #project .project-list .header {
   font-size: 30px;
-  font-family: "Freestyle Script";
+  font-family: var(--second-font);
   text-decoration: underline;
   margin-bottom: 20px;
 }
@@ -285,7 +321,7 @@ a {
 }
 #project .project-list .projects .project-name ol .project-header {
   font-size: 20px;
-  font-family: "Bradley Hand ITC";
+  font-family: var(--third-font);
   font-weight: 800;
 }
 #project .project-list .projects .project-name ol li {
@@ -328,7 +364,7 @@ a {
 }
 .tools-container .header h3 {
   font-size: 30px;
-  font-family: "Freestyle Script";
+  font-family: var(--second-font);
   text-decoration: underline;
 }
 .tools-container ol {
@@ -348,7 +384,7 @@ a {
 .tools-container ol .Database li {
   margin-bottom: 10px;
   color: #0d6efd;
-  font-family: "Bradley Hand ITC";
+  font-family: var(--third-font);
   font-weight: 400;
 }
 
@@ -370,7 +406,7 @@ a {
 #about-me .about-container .header h3 {
   font-size: 30px;
   text-decoration: underline;
-  font-family: "Freestyle Script";
+  font-family: var(--second-font);
 }
 #about-me .about-container .about {
   display: flex;
@@ -379,13 +415,11 @@ a {
 }
 #about-me .about-container .about ol li {
   font-size: 30px;
-  font-family: "Bradley Hand ITC";
-}
-#about-me .about-container .about ol li span {
-  font-size: 40px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  font-family: "Freestyle Script";
+  font-family: var(--third-font) span;
+  font-family-font-size: 40px;
+  font-family-font-weight: 200;
+  font-family-letter-spacing: 1px;
+  font-family-font-family: var(--second-font);
 }
 #about-me .about-container .profile-image {
   margin-right: 10px;
